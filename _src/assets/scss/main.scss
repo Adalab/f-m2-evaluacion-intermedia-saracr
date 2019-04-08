@@ -1,5 +1,16 @@
 @import 'core/settings';
 
 body {
-	
+	margin: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
+
+.page__main-content{
+	text-align: center;
+}
+.page__main-counter {}
+.page__main-insert {}
+.btn {}
+.page__main-clue {}
