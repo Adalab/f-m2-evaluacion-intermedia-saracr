@@ -14,17 +14,20 @@ function getRandomNumber(max) {
     return Math.ceil(Math.random() * 100);
   }
   
-  // Anda, chacho, píntame en la consola un número random hasta 100;
   console.log('> ' + getRandomNumber(100));
-
-
 
 // Crear función del listener
 
-const writeNumber = () => {
-    counter.innerHTML = insertNumber.value;
-}
+const writeClue = () => {
+    clue.innerHTML = insertNumber.value;
+
+    const myRandomNumber = getRandomInt(100);
+    if (myRandomNumber){
+        console.log(`Demasiado alto!`);
+    }
+    else {}
+};
 
 //Listener al botón
 
-btn.addEventListener('click', writeNumber);
+btn.addEventListener('click', writeClue);
