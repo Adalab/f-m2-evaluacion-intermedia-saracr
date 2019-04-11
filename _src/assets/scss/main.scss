@@ -5,12 +5,49 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	background-color: #1f174a;
+	color: #f14132;
+	font-family: 'Raleway', sans-serif;
 }
 
-.page__main-content{
+.page__main{
 	text-align: center;
 }
-.page__main-counter {}
-.page__main-insert {}
-.btn {}
-.page__main-clue {}
+.page__main-header{
+
+}
+.page__main-title{
+	text-transform: uppercase;
+	font-size: 24px;
+}
+.page__main-counter{
+
+}
+.page__main-content{
+	
+
+}
+.page__main-instruction{
+
+}
+.page__main-insert{
+	height: 30px;
+	width: 120px;
+
+}
+.btn{
+	height: 40px;
+	width: 120px;
+	background-color: transparent;
+	border-radius: 6px;
+	color: #f14132;
+	text-transform:  uppercase;
+	border: solid 2px #f14132;
+	
+	font-size: 14px;
+	margin-left: 15px;
+
+}
+.page__main-clue{
+
+}
