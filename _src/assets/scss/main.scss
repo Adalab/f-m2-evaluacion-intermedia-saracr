@@ -2,23 +2,27 @@
 
 body {
 	margin: 0;
-	display: flex;
-	justify-content: center;
-	align-items: center;
 	background-color: #1f174a;
 	color: #f14132;
 	font-family: 'Raleway', sans-serif;
-}
-
-.page__main{
 	text-align: center;
+	height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	position: relative;
+}
+.page__main{
+	position: absolute;
+    transform: translateX(-50%);
 }
 .page__main-header{
+	
 
 }
 .page__main-title{
 	text-transform: uppercase;
-	font-size: 24px;
+	font-size: 28px;
 }
 .page__main-counter{
 
@@ -42,8 +46,8 @@ body {
 	color: #f14132;
 	text-transform:  uppercase;
 	border: solid 2px #f14132;
-	
 	font-size: 14px;
+	font-weight: 700;
 	margin-left: 15px;
 
 }
