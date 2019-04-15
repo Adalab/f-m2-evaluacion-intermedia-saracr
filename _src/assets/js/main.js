@@ -6,30 +6,39 @@ const insertNumber = document.querySelector('.page__main-insert');
 const btn = document.querySelector('.btn');
 const clue = document.querySelector('.page__main-clue');
 let i = 0;
+counter.innerHTML = i;
 
 console.log('>> Ready :)');
 
+
 // Función número aleatorio
-
 function getRandomNumber(max) {
-    return Math.ceil(Math.random() * max);
+  return Math.ceil(Math.random() * max);
+}
+
+const gameNumber = getRandomNumber(100);
+console.log(gameNumber);
+
+
+const play = () => {
+  const playerNumber = parseInt(insertNumber.value);
+  console.log('número usuario', playerNumber);
+  console.log('número juego', gameNumber);
+  if (gameNumber === playerNumber){
+    clue.innerHTML = '¡Yasss has acertado 🖖!';
+    i= i+1;
+    counter.innerHTML = i;
   }
-  let secretNumber = getRandomNumber(100);
-  console.log('>',secretNumber);
-
-// Crear función del listener
-
-const writeClue = () => {
-    //Pistas
-    const userNumber = parseInt(field.value);
-    console.log('nº usuario', userNumber);
-    console.log('mi nº', secretNumber);
-    if (myRandomNumber === userNumber){
-        console.log(`Demasiado alto!`);
-    }
-    else {}
+  else if (gameNumber > playerNumber){
+    clue.innerHTML = '¡Sube más 👆!';
+    i= i+1;
+    counter.innerHTML = i;
+  }
+  else if (gameNumber < playerNumber){
+    clue.innerHTML = '¡Te has pasado prima👇!';
+    i= i+1;
+    counter.innerHTML = i;
+  }
 };
-
-//Listener al botón
 
 btn.addEventListener('click', play);
