@@ -35,7 +35,7 @@ const play = () => {
     counter.innerHTML = i;
   }
   else if (gameNumber < playerNumber){
-    clue.innerHTML = '¡Te has pasado prima👇!';
+    clue.innerHTML = '¡Te has pasado 👇!';
     i= i+1;
     counter.innerHTML = i;
   }
