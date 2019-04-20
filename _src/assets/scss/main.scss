@@ -16,17 +16,17 @@ body {
 	position: absolute;
     transform: translateX(-50%);
 }
-.page__main-header{
-	
 
-}
 .page__main-title{
 	text-transform: uppercase;
 	font-size: 30px;
+
 }
 .page__main-counter{
-	font-size: 32px;
-	font-weight: 700;
+	font-size: 60px;
+	position: absolute;
+	left: 400px;
+	top: 46%;
 
 }
 .page__main-content{
