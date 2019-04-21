@@ -25,7 +25,7 @@ const play = () => {
   console.log('número usuario', playerNumber);
   console.log('número juego', gameNumber);
   if (gameNumber === playerNumber){
-    clue.innerHTML = '¡Yasss has acertado 🖖!';
+    clue.innerHTML = '¡YASS, HAS ACERTADO 🖖!';
     i= i+1;
     counter.innerHTML = i;
   }
@@ -35,7 +35,7 @@ const play = () => {
     counter.innerHTML = i;
   }
   else if (gameNumber < playerNumber){
-    clue.innerHTML = '¡Te has pasado prima👇!';
+    clue.innerHTML = '¡Baja, te has pasado 👇!';
     i= i+1;
     counter.innerHTML = i;
   }
