@@ -2,15 +2,60 @@
 
 body {
 	margin: 0;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
-.page__main-content{
+	background-color: #1f174a;
+	color: #f14132;
+	font-family: 'Raleway', sans-serif;
 	text-align: center;
 }
-.page__main-counter {}
-.page__main-insert {}
-.btn {}
-.page__main-clue {}
+.page__main{
+	padding-top: 80px; 
+}
+.page__main-title{
+	text-transform: uppercase;
+	font-size: 30px;
+}
+.page__main-counter{
+	font-size: 50px;
+	position: absolute;
+	right: 200px;
+	top: 80px;
+}
+.page__main-instruction{
+	font-size: 20px;
+	padding-bottom: 30px;
+}
+.page__main-insert{
+	height: 34px;
+	width: 120px;
+	border-radius: 16px;
+	border: solid 2px white;
+	font-size: 16px;
+	text-align: center;
+	color: #f14132;
+	background-color: transparent;
+}
+.page__main-interaction{
+	display: flex;
+	align-content: center;
+	justify-content: center;
+}
+.btn{
+	cursor: pointer;
+	height: 40px;
+	width: 120px;
+	background-color: transparent;
+	border: solid 2px #f14132;
+	border-radius: 16px;
+	color: white;
+	text-transform: uppercase;
+	font-size: 12px;
+	font-weight: 700;
+	margin-left: 15px;
+	&:hover{
+		background-color: #f14132;
+	}
+}
+.page__main-clue{
+	padding: 20px;
+	font-size: 18px;
+}
